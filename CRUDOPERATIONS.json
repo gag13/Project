@@ -1,0 +1,183 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "b589698c-549f-432c-8615-e4cf4ab7c21d",
+        "name": "JPDB"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "id": "6a596ac9-0834-4843-813a-465c4e559813",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\n  {\n    \"token\": \"90937808|-31949297689539282|90941933\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n     \"jsonStr\": \n        {\n         \n            \"name\": \"Gagan\",\n       \n}\n  }\n    \n\n"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/irl"
+                },
+                "id": "cf17e932-569a-4df3-9d59-f3427356e0c5",
+                "name": "GET",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\n  {\n    \"token\": \"90937808|-31949297689539282|90941933\",\n    \"cmd\": \"PUT_ALL\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n     \"jsonStr\": [\n        {\n          \"id\":\"3\",\n            \"name\": \"Pranitha\",\n            \"email\": \"pranitha@gmail.com\",\n            \"mobileno\": \"3293808008\"\n           \n\n        },\n       \n        {\n          \"id\":\"4\",\n            \"name\": \"PranithaSurya\",\n            \"email\": \"pranithas@gmail.com\",\n            \"mobileno\": \"32938080008\"\n\n        },\n       \n        {\n            \"id\":\"5\",\n            \"name\": \"Praitha\",\n            \"email\": \"pranLha@gmail.com\",\n            \"mobileno\": \"329388008\"\n\n        }\n    ]\n   \n}\n    \n\n"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "c1b2cb7e-1e1f-4714-884c-6505389a7034",
+                "name": "PUT",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\n  {\n    \"token\": \"90937808|-31949297689539282|90941933\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n     \"jsonStr\": \n        {\n         \n        \"5\":{\n        \"name\": \"Gargee Mishra\",\n        \"email\":\"gargee@gmail.com\",\n        \"mobileno\": \"7098162348\"\n       \n}\n  }\n  }\n\n"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "0ce3711a-d69a-43eb-944f-7a075d4814e6",
+                "name": "REMOVE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "\n  {\n    \"token\": \"90937808|-31949297689539282|90941933\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-Rel\",\n     \"jsonStr\": \n        {\n         \n        \"5\":{\n        \"name\": \"Gargee Mishra\",\n        \"email\":\"gargee@gmail.com\",\n        \"mobileno\": \"7098162348\"\n       \n}\n  }\n  }\n\n"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "4692efc4-b481-4141-8cba-77ac1f982293",
+                "name": "UPDATE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
